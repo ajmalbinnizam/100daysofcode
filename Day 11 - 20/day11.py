@@ -1,6 +1,6 @@
 import random
 from art import logo
-from replit import clear
+# from replit import clear
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
@@ -65,7 +65,7 @@ def start_game(player, computer):
 
 def play():
   if input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-    clear()
+    # clear()
     player = [random.choice(cards), random.choice(cards)]
     computer = [random.choice(cards), random.choice(cards)]
     start_game(player, computer)
