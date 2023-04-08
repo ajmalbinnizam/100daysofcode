@@ -97,7 +97,7 @@ while True:
                 profit += coffee_description["cost"]
                 balance = round(user_total - coffee_description["cost"], 2)
                 print(f"Here is your balance: {balance}")
-                print(f"Here is your {coffee} ☕")
+                print(f"Here is your {coffee}  ☕")
                 make_coffee(coffee_description["ingredients"])
             else:
                 print("Sorry that's not enough money. Money refunded.")
