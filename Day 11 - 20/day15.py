@@ -29,6 +29,7 @@ MENU = [
         }
     },
 ]
+global profit
 profit = 0
 resources = {
     "water": 300,
@@ -93,7 +94,6 @@ while True:
         if is_available:
             user_total = process_coin()
             if user_total > coffee_description["cost"]:
-                global profit
                 profit += coffee_description["cost"]
                 balance = round(user_total - coffee_description["cost"], 2)
                 print(f"Here is your balance: {balance}")
